@@ -19,3 +19,5 @@ const Welcome = ({navigation}) => {
         </View>
     );
 };
+
+export default Welcome;
