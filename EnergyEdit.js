@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Button, Alert } from "react-native";
 
-const API_BASE_URL = "https://YOUR-RENDER-URL.onrender.com";
+const API_BASE_URL = "https://c346-ca2-webservice-y4j8.onrender.com/";
 
 export default function EnergyEdit({ route, navigation }) {
     // navigation.navigate("EnergyEdit", { userId, habit: item })
