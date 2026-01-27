@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, SectionList, Button, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, SectionList, Button, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 
 let originalData = [];
 
@@ -116,9 +116,9 @@ const Home = ({navigation}) => {
     );
 
     return (
-        <View>
+        <View style={styles.container}>
             <StatusBar translucent={false}/>
-            <Text>Habit Tracker</Text>
+            <Text style={styles.title}>Habit Tracker</Text>
             
             <Text>Search:</Text>
             <TextInput 
@@ -135,5 +135,22 @@ const Home = ({navigation}) => {
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center',
+        padding:20,
+    },
+    title: {
+        textAlign:'center',
+        fontWeight:'bold',
+        fontSize:20,
+        marginBottom: 40,
+        marginTop:40,
+
+    },
+})
 
 export default Home;
