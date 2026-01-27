@@ -124,6 +124,7 @@ const Home = ({navigation}) => {
             <TextInput 
                 placeholder="Search by habit name or category..."
                 onChangeText={(text) => {FilterData(text)}}
+                style={styles.input}
             />
             
             <SectionList 
@@ -151,6 +152,12 @@ const styles = StyleSheet.create({
         marginTop:40,
 
     },
+    input: {
+        borderWidth: 1,
+        borderColor:'',
+        borderRadius:15,
+        padding:30,
+    }
 })
 
 export default Home;
