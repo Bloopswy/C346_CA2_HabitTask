@@ -5,8 +5,9 @@ import { Text, View, Button} from 'react-native';
 const Welcome = ({navigation}) => {
     return (
         <View>
-            <StatusBar translucent={false}/>
+            <StatusBar style="auto"/>
             <Text>Welcome to the Green Habit Tracker</Text>
+            <Text>Live Green, One Step at a Time</Text>
             <Text>Track your daily habits, build a better you and help the environment!</Text>
 
             <Text>Description</Text>
@@ -18,5 +19,3 @@ const Welcome = ({navigation}) => {
         </View>
     );
 };
-
-export default Welcome;
