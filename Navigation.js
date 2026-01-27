@@ -4,7 +4,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Welcome from "./Welcome.js";
 import Home from "./Home.js";
-import Add from "./Add.js";
 import Summary from "./Summary.js";
 import Energy from "./Energy.js";
 import EnergyAdd from "./EnergyAdd.js";
@@ -22,11 +21,10 @@ const Stack = createNativeStackNavigator();
 const Navigation = () => {
     return(
         <NavigationContainer >
-            <Stack.Navigator screenOptions={{headerShown:false}}>
+            <Stack.Navigator initialRouteName="Welcome" screenOptions={{headerShown:false}}>
                 <Stack.Screen name='Home' component={Home} />
-                <Stack.Screen name='Add' component={Add} />
                 <Stack.Screen name='Welcome' component={Welcome} />
-                <Stack.Screen name='Summary' component={Summary} />
+                {/* <Stack.Screen name='Summary' component={Summary} />
                 <Stack.Screen name='Energy' component={Energy} />
                 <Stack.Screen name='EnergyAdd' component={EnergyAdd} />
                 <Stack.Screen name='EnergyEdit' component={EnergyEdit} />
@@ -35,7 +33,7 @@ const Navigation = () => {
                 <Stack.Screen name='TransportEdit' component={TransportEdit} />
                 <Stack.Screen name='Waste' component={Waste} />
                 <Stack.Screen name='WasteAdd' component={WasteAdd} />
-                <Stack.Screen name='WasteEdit' component={WasteEdit} />
+                <Stack.Screen name='WasteEdit' component={WasteEdit} /> */}
             </Stack.Navigator>
         </NavigationContainer>
     );
